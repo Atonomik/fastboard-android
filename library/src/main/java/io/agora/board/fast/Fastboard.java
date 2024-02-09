@@ -68,14 +68,6 @@ public class Fastboard {
         if (whiteboardRatio == null) {
             lps.height = FrameLayout.LayoutParams.MATCH_PARENT;
             lps.width = FrameLayout.LayoutParams.MATCH_PARENT;
-        } else {
-            if (h / whiteboardRatio >= w) {
-                lps.height = (int) (w * whiteboardRatio);
-                lps.width = w;
-            } else {
-                lps.height = h;
-                lps.width = (int) (h / whiteboardRatio);
-            }
         }
         whiteboardView.setLayoutParams(lps);
     }
